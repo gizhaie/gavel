@@ -1,3 +1,5 @@
+'use strict';
+
 var https = require('https');
 var http = require('http');
 var querystring = require('querystring');
@@ -46,7 +48,7 @@ function get(options, callback) {
 	request.on('error', function (error) {
 		callback(error);
 	});
-};
+}
 
 function sendRequest(path, callback) {
 	var options = {
@@ -77,6 +79,6 @@ exports.getAuctionData = function (realm, callback) {
 	});
 	var path = '/wow/' + apis.auctionData + realm + '?' + getData;
 	sendRequest(path, callback);
-}
+};
 
 exports.getFile = get;
