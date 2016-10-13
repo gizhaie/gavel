@@ -1,0 +1,13 @@
+# Logs
+npm-debug.log*
+
+# Configuration files
+config/*
+!config/local.sample.yaml
+!config/custom-environment-variables.yaml
+
+# Dependency directories
+node_modules
+
+# OS files
+.DS_Store
