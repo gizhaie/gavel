@@ -2,9 +2,9 @@
   "name": "gavel",
   "version": "0.0.1",
   "description": "gavel",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node ./lib/index.js",
     "test": "echo \"To be specified\" && exit 0",
     "lint": "eslint .",
     "validate": "npm ls"
