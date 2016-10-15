@@ -1,11 +1,12 @@
-"use strict";
+'use strict';
 
-var config = require('config');
+require('config');
+
 var schedule = require('node-schedule');
 
 var rule = new schedule.RecurrenceRule();
 // Auction House data is updated every hour, at HH:36:58
 rule.minute = 37;
-var updateAuctionStatisticsJob = require('./jobs/updateAuctionStatistics.js')
+var updateAuctionStatisticsJob = require('./jobs/updateAuctionStatistics.js');
 
 schedule.scheduleJob(rule, updateAuctionStatisticsJob);
